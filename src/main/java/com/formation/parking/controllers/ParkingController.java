@@ -16,7 +16,7 @@ public class ParkingController {
     @Autowired
     private ParkingService parkingService;
 
-    /*@CrossOrigin("http://localhost:8080")  ON PEU AJOUTER UNE * POUR AUTORISER TOUT LES SITES */
+    @CrossOrigin("http://localhost:4200")  /*ON PEU AJOUTER UNE * POUR AUTORISER TOUT LES SITES */
     @GetMapping("/api/parkings")
     public List<Parking> getListParkings(){
         return parkingService.getListParkings();
